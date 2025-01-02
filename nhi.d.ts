@@ -7,4 +7,4 @@
  * @param {string} nhi a potential NHI number
  * @return {boolean} true if the given nhi value is a valid NHI number and false otherwise
  */
-export function isNhi(nhi: string): boolean;
+export declare function isNhi(nhi: string): boolean;

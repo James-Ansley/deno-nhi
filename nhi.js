@@ -1,8 +1,9 @@
-/// <reference types="./nhi.d.ts" />
+// @ts-self-types="./nhi.d.ts"
 
 const OLD_NHI_FORMAT = /^[A-HJ-NP-Z]{3}\d{4}$/;
 const NEW_NHI_FORMAT = /^[A-HJ-NP-Z]{3}\d{2}[A-HJ-NP-Z]{2}$/;
 
+/** @type {import("./nhi.d.ts").isNhi} isNhi */
 export function isNhi(nhi) {
     nhi = nhi.toUpperCase();
     if (NEW_NHI_FORMAT.test(nhi)) {
@@ -19,6 +20,10 @@ export function isNhi(nhi) {
     }
 }
 
+/**
+ * @param {number[]} codes
+ * @returns {number}
+ */
 function weightedCodes(codes) {
     return codes
         .slice(0, -1)
@@ -26,9 +31,13 @@ function weightedCodes(codes) {
         .reduce((acc, e) => acc + e, 0);
 }
 
+/**
+ * @param {string} nhi
+ * @returns {number[]}
+ */
 function charCodes(nhi) {
     return [...nhi].map(c => {
-        if (!isNaN(c)) {
+        if (!isNaN(Number(c))) {
             return Number(c);
         } else {
             return c.charCodeAt(0)
