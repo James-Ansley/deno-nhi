@@ -1,3 +1,5 @@
+/// <reference types="./nhi.d.ts" />
+
 const OLD_NHI_FORMAT = /^[A-HJ-NP-Z]{3}\d{4}$/;
 const NEW_NHI_FORMAT = /^[A-HJ-NP-Z]{3}\d{2}[A-HJ-NP-Z]{2}$/;
 

@@ -1,6 +1,6 @@
 {
   "name": "@james-ansley/nhi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "exports": "./nhi.js",
   "lock": false,
@@ -11,7 +11,8 @@
     "include": [
       "LICENSE",
       "README.md",
-      "nhi.js"
+      "nhi.js",
+      "nhi.d.ts"
     ],
     "exclude": [
       "test.js"
