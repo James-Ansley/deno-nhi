@@ -1,5 +1,5 @@
 import {assert, assertFalse} from "@std/assert";
-import {isNhi} from "./nhi.js";
+import {isNhi} from "../src/nhi.js";
 
 Deno.test("valid old format NHI number", () => {
     assert(isNhi("JBX3656"));
