@@ -1,10 +1,20 @@
 {
   "name": "@james-ansley/nhi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "exports": "./nhi.js",
+  "lock": false,
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
   },
-  "lock": false
+  "publish": {
+    "include": [
+      "LICENSE",
+      "README.md",
+      "nhi.js"
+    ],
+    "exclude": [
+      "test.js"
+    ]
+  }
 }
