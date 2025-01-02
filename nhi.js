@@ -10,7 +10,7 @@ const NEW_NHI_FORMAT = /^[A-HJ-NP-Z]{3}\d{2}[A-HJ-NP-Z]{2}$/;
  * @see {@link https://www.tewhatuora.govt.nz/publications/hiso-100462023-consumer-health-identity-standard/|HISO 10046:2023 Standard}
  *
  * @param {string} nhi a potential NHI number
- * @returns {boolean} true if the given nhi value is a valid NHI number and false otherwise
+ * @return {boolean} true if the given nhi value is a valid NHI number and false otherwise
  */
 export function isNhi(nhi) {
     nhi = nhi.toUpperCase();
