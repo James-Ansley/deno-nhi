@@ -4,7 +4,7 @@ const OLD_NHI_FORMAT = /^[A-HJ-NP-Z]{3}\d{4}$/;
 const NEW_NHI_FORMAT = /^[A-HJ-NP-Z]{3}\d{2}[A-HJ-NP-Z]{2}$/;
 
 /** @type {import("./nhi.d.ts").isNhi} isNhi */
-export function isNhi(nhi) {
+export const isNhi = (nhi) => {
     nhi = nhi.toUpperCase();
     if (NEW_NHI_FORMAT.test(nhi)) {
         const codes = charCodes(nhi);
