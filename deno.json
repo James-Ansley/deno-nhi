@@ -2,7 +2,7 @@
   "name": "@james-ansley/nhi",
   "version": "0.0.9",
   "license": "MIT",
-  "exports": "./src/main.js",
+  "exports": "./src/nhi.js",
   "lock": false,
   "publish": {
     "include": [
